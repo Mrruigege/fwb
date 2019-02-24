@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script>
+        $(function () {
+            var btn = $(".btn")[0];
+            btn.onclick = function () {
+                $.ajax({
+                    type: "get",
+                    url: "/get",
+                    success: function (data) {
+                        console.log(data);
+                        //var obj = $.parseJSON(data);
+                       // console.log(data.name);
+                        //console.log(data.passwd);
+                        for (var i = 0 ; i < data.length ; i++){
+                            console.log(data[i]["name"]);
+                        }
+                    },
+                    error: function (xhr) {
+                        console.log(xhr.status);
+                    }
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+<button class="btn">发送请求</button>
+</body>
+</html>

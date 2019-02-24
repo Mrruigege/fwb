@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration-line: none;
+}
+
+html,
+body {
+    z-index: -2;
+    height: 100%;
+    background: url(../image/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav {
+    border: none;
+    background-color: rgb(103, 183, 198);
+    height: 76px;
+    border-radius: 0;
+}
+
+.navbar-header {
+    left: 40px;
+}
+
+.logo-cgme {
+    margin-top: 14px;
+}
+
+.navbar-nav {
+    float: left;
+    text-align: center;
+    color: rgb( 51, 26, 112);
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.active {
+    border-radius: 20px;
+}
+
+ul.nav.navbar-nav li {
+    display: inline-block;
+    margin: 0em;
+    /* padding-bottom: 20px; */
+    /* color: rgb( 51, 26, 112); */
+    font-size: 14px;
+    width: 120px;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.navbar-nav>li>a {
+    /* height: 40px;
+    width: 100px; */
+    color: rgb( 51, 26, 112);
+    font-size: 14px;
+    /* text-align: center; */
+}
+
+.text {
+    font-size: 14px;
+    font-family: "AdobeHeitiStd";
+    color: rgb( 51, 26, 112);
+    line-height: 4.286;
+    position: absolute;
+    left: 431.344px;
+    top: 87.969px;
+    width: 505px;
+    height: 14px;
+    z-index: 83;
+}
+
+#user-img {
+    background: url(../image/user-img.png);
+}
+
+.row {
+    margin-left: 0;
+}
+
+.srk {
+    width: 250px;
+    height: 40px;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.bg-img {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+}
+
+
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-header span {
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
+    color: rgb( 21, 47, 73);
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    background-color: rgb( 255, 204, 51);
+    box-shadow: 0px 0px 7px 0px rgb( 214, 214, 214);
+    padding: 10px;
+    position: absolute;
+    right: -55px;
+    top: 0;
+}
+
+
+
+.modal-backdrop {
+    background-color: rgb( 255, 255, 255);
+    /* 设置遮罩层颜色 */
+}
+
+#characters {
+    position: absolute;
+    left: 140px;
+    top: 185px;
+}
+
+#characters h2 {
+    display: inline-block;
+    overflow: hidden;
+    width: 45px;
+    white-space: nowrap;
+    font-size: 45px;
+    animation: first 2s;
+    -webkit-animation: first 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes first {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px
+    }
+}
+
+@-webkit-keyframes first {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px
+    }
+}
+
+#characters .form-group input {
+    width: 410px;
+    height: 60px;
+    background-color: rgb( 255, 255, 255);
+    display: inline-block;
+    border-radius: 30px
+}
+
+#characters .form-group span {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    left: 365px;
+}
+
+#characters input::-webkit-input-placeholder,
+#characters textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgb( 180, 60, 210);
+    font-size: 14px;
+}
+
+#characters input:-moz-placeholder,
+#characters textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgb( 180, 60, 210);
+    font-size: 14px;
+}
+
+#characters input::-moz-placeholder,
+#characters textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgb( 180, 60, 210);
+    font-size: 14px;
+}
+
+#characters input:-ms-input-placeholder,
+#characters textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgb( 180, 60, 210);
+    font-size: 14px;
+}

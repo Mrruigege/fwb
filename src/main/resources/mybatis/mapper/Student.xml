@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rui.fwb.dao.IStudentDao"> <!--Dao层位置-->
+    <select id="findAll" resultType="Student">
+        SELECT * FROM student ;
+    </select>
+    <select id="findByName" resultType="Student">
+        SELECT name,passwd from student where name=#{arg0};
+    </select>
+    <insert id="insert" parameterType="com.rui.fwb.vo.Student">
+        insert into student(name,passwd,class,realname) value (#{arg0},#{arg1},#{arg2},#{arg3});
+    </insert>
+</mapper>

@@ -1,0 +1,330 @@
+#fileOperate {
+    margin-top: 35px;
+}
+
+#fileOperate .uploadRight {
+    height: 500px;
+    border: 2px solid rgb( 185, 223, 232);
+    border-radius: 5px;
+    background-color: rgb( 252, 250, 250);
+    overflow-y: auto;
+    /* padding: 20px; */
+}
+
+#fileOperate .uploadRight ul {
+    height: 100%;
+    list-style: none;
+    float: left;
+}
+
+.uploadHeader,
+.combineHeader {
+    height: 44px;
+    border-bottom: 4px rgb( 191, 191, 191) solid;
+}
+
+.combineHeader a,
+.uploadHeader a {
+    text-decoration: none;
+}
+
+.combineHeader-left a,
+.uploadHeader-left a {
+    margin-top: 5px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    color: rgb( 255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb( 0, 255, 255);
+    font-family: "AdobeHeitiStd";
+}
+
+.combineHeader-right,
+.uploadHeader-right {
+    height: 44px;
+    float: right;
+}
+
+.combineHeader-right p,
+.uploadHeader-right p {
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    font-family: "MyriadPro";
+    padding: none;
+    margin: none;
+}
+
+.combineHeader-right a,
+.uploadBody a {
+    text-decoration: none;
+    color: rgb( 255, 255, 255);
+}
+
+.lesson {
+    height: 165px;
+    background-color: rgb( 0, 160, 233);
+    margin: 15px 30px;
+    cursor: pointer;
+}
+
+.lesson a {
+    text-decoration: none;
+    color: rgb( 255, 255, 255);
+}
+
+.lesson-text {
+    font-size: 18px;
+    font-family: "Microsoft YaHei UI";
+    color: rgb( 255, 255, 255);
+    text-align: center;
+}
+
+.upload-modal {
+    width: 340px;
+    height: 434px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 1px solid rgb( 192, 183, 183);
+    background-color: rgb( 255, 255, 255);
+    padding: 10px 30px;
+}
+
+.upload-modal form {
+    width: 216px;
+}
+
+#uploadForm {
+    margin-top: 35px;
+    width: 216px;
+    margin-left: 30px;
+}
+
+#confirm {
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 25px;
+    background-color: rgb( 255, 255, 0);
+    font-size: 24px;
+    font-family: "Microsoft YaHei UI";
+    border: 1px solid rgb( 192, 183, 183);
+}
+
+#cancel {
+    width: 100px;
+    background-color: rgb( 238, 238, 238);
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.a-upload {
+    width: 216px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 21px;
+    overflow: hidden;
+    display: inline-block;
+    color: rgb( 0, 160, 233);
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.a-upload :hover {
+    cursor: pointer;
+}
+
+.a-upload input {
+    width: 216px;
+    height: 40px;
+    font-size: 100px;
+    opacity: 0;
+    display: block;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    position: absolute;
+}
+
+.a-upload span {
+    width: 40px;
+    height: 40px;
+    background-size: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#mask {
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#send {
+    width: 100%;
+    height: 100%;
+}
+
+#send p {
+    font-size: 30px;
+    font-family: "Microsoft YaHei UI";
+    text-align: center;
+    color: rgb( 21, 47, 73);
+}
+
+#send .send-wrapper {
+    height: 360px;
+    width: 700px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+#send .send-wrapper ul {
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#send .send-wrapper ul li {
+    height: 248px;
+    width: 280px;
+    float: left;
+    background-color: rgb( 126, 206, 244);
+}
+
+#handIn form,
+#handOut form {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+#handIn form-group,
+#handOut form-group {
+    /* margin: 10px auto; */
+    -webkit-box-flex: 1;
+}
+
+#handOut form input,
+#handIn form input {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 30px;
+    display: block;
+    /* margin: 10px 0; */
+    text-align: center;
+    /* margin: 10px auto; */
+    -webkit-box-flex: 1;
+}
+
+#handOut form select,
+#handIn form select {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 50px;
+    display: block;
+    text-align: center;
+    text-align-last: center;
+    /* appearance: none; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: none;
+}
+
+option {
+    text-align: center;
+}
+
+.b-upload {
+    *zoom: 1;
+    width: 240px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 21px;
+    overflow: hidden;
+    display: block;
+    color: #aab2bd;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    /* margin: 10px auto; */
+    -webkit-box-flex: 1;
+    /* padding-left: 10px; */
+    /* margin-top: 10px; */
+}
+
+.b-upload input {
+    width: 216px;
+    height: 40px;
+    font-size: 100px;
+    opacity: 0;
+    display: block;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    position: absolute;
+    -webkit-box-flex: 1;
+}
+
+.b-upload span {
+    width: 40px;
+    height: 40px;
+    background-size: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#combine ul li {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei UI";
+    color: rgb( 17, 121, 168);
+    text-align: center;
+    text-decoration: none;
+}
+
+#combine ul li a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei UI";
+    color: rgb( 17, 121, 168);
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid rgb( 181, 181, 181);
+}
+
+#combine .jiantou {
+    height: 30px;
+    width: 25px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -29px;
+    margin-top: 6px;
+    background: url(../image/combine/jiantou.png) no-repeat ;
+    background-size: auto;
+}
